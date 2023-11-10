@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SimpleSmsList</string>
+    <string name="sms_sender">Sms Sender</string>
+    <string name="sms_message">Message</string>
+    <string name="sms_date">15 Nov.</string>
+    <string name="sms_time">15:00</string>
+    <string name="sms_title">SMS</string>
+    <string name="failed_load_sms_message_title">Failed to load messages</string>
+    <string name="failed_load_sms_message_description">You forbid \"Read SMS\" permission. It is required for correct display.</string>
+</resources>

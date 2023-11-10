@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/sendersSmsListFragment">
+
+    <fragment
+        android:id="@+id/sendersSmsListFragment"
+        android:name="com.example.simplesmslist.senders_sms_list.SendersSmsListFragment"
+        android:label="SendersSmsListFragment">
+
+        <action
+            android:id="@+id/action_sendersSmsListFragment_to_smsListFragment"
+            app:destination="@id/smsListFragment">
+
+            <argument
+                android:name="sms_sender"
+                app:argType="string"
+                android:defaultValue=""/>
+
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/smsListFragment"
+        android:name="com.example.simplesmslist.sms_list.SmsListFragment"
+        android:label="SmsListFragment">
+
+        <argument
+            android:name="sms_sender"
+            app:argType="string"
+            android:defaultValue=""/>
+
+    </fragment>
+</navigation>
